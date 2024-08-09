@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author: Thilakkumar V
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome5}
+\usepackage{xparse}
+
+% ----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+\usepackage{charter}
+% \usepackage{CormorantGaramond}
+% \usepackage{lato}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+
+%-----------Custom Commands----------------------------------------------------
+\NewDocumentCommand{\resumeSubheading}{ m m m m o }{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small#2} \\
+      \textit{\small#3} & \textit{\small#4} \\
+      \IfValueT{#5}{\multicolumn{2}{l}{\textit{\small #5}}} % Include the fifth argument if provided
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{{\small#2}} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%------------HEADING------------
+\begin{center}
+    \textbf{\Huge Thilakkumar V} \\ \vspace{2pt}
+    {\raisebox{0.0\height}{\footnotesize \faPhone}\
+    \footnotesize +91-9092776817} $|$
+    \href{mailto:vinaythilak002@gmail.com}
+    {\raisebox{-0.1\height}{\footnotesize \faEnvelope}\
+    \footnotesize \underline{vinaythilak002@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/thilakkumar-v-65610a200/}
+    {\raisebox{-0.1\height}{\footnotesize \faLinkedin}\
+    \footnotesize \underline{linkedin.com/in/thilakkumar-v}} $|$
+    \href{https://github.com/Thilak-07}
+    {\raisebox{-0.1\height}{\footnotesize \faGithub}\
+    \footnotesize \underline{github.com/Thilak-07}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology, Tiruchirappalli}{2020 -- 2024}
+      {Bachelor of Technology in Civil Engineering, Minors in Computer Science}{8.21 CGPA}
+      [Relevant Coursework: Data Structures, DBMS, Artificial Intelligence, Operating Systems, Software Engineering]
+    \resumeSubheading
+      {Shree Niketan Matric. Hr Secondary School, Chennai}{2020}
+      {Class XII, Central Board of Secondary Education}{91.17\%}
+    \resumeSubheading
+      {Vivekananda Vidyalaya, Chennai}{2018}
+      {Class X, Central Board of Secondary Education}{95.20\%}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Undergraduate Research Assistant}{June 2020 -- Present}
+      {Texas A\&M University}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Information Technology Support Specialist}{Sep. 2018 -- Present}
+      {Southwestern University}{Georgetown, TX}
+      \resumeItemListStart
+        \resumeItem{Communicate with managers to set up campus computers used on campus}
+        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS------------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+            \resumeItem{Visualized GitHub data to show collaboration}
+            \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small \item{
+         \textbf{Languages:}{ Python, SQL (MySQL), C/C++, JavaScript} \\
+         \textbf{Libraries:}{ Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, TensorFlow} \\
+         \textbf{Web Stack:}{ HTML/CSS, ReactJS, Node.js, Express.js, Tailwind, Bootstrap} \\
+         \textbf{Tools:}{ PowerBI, Advanced Excel, Tableau, Looker Studio, Jupyter Notebook, MATLAB, VS Code, Google Cloud Platform} \\
+         \textbf{Certifications:}{ Data Analysis and Visualization using Python, Excel and Cognos, Databases \& SQL for Data Science}
+    }
+ \end{itemize}
+
+
+%-----------POSITIONS OF RESPONSIBILITY-----------
+\section{Positions of Responsibility}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Chairperson, Nittfest’23} $|$ \emph{The Annual Cultural Festival of NIT Trichy}}{March 2022 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{Led and coordinated a 3-tier team of 100+ managers, and 200+ freshers to organize NITTFEST'23, overseeing an extensive array of 80+ events with a footfall of over 12000 students.}
+            \resumeItem{Developed and implemented strategies for marketing, promotions, budgeting, risk assessment and financial acumen, resulting in the effective management of 75 lakhs INR.}
+            \resumeItem{Successfully organized events featuring high-profile guests like Padma Bhushan Dr. Kamal Haasan and prominent industry professionals, forging collaborations with 7+ production media houses.}
+            \resumeItem{Devised innovative branding strategies and outreach events spanning 50+ companies, resulting in a substantial 70\% increase in corporate sponsorship and funding.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Consultant} $|$ \emph{180 Degrees Consulting, NIT Trichy}}{Jan. 2022 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{Handled 4 consulting projects (3 start-ups, 1 NGO), with an NPS of 100\% across clients.}
+            \resumeItem{Within the FinTech Innovation Project, BharatX, conducted primary research on 10+ professional education loan systems, analyzed 5-year Indian Ed-Tech market growth with 7 parameters, and devised 3 innovative strategies for a microcredit company's entry into the education loan market.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \item\small{
+      \begin{tabular*}{0.97\textwidth}{@{\extracolsep{\fill}} ll}
+        \textbullet\ \textbf{Secured 1st Position} Smart India Hackathon, MHRD, Government of India & \textbf{May 2021} \\
+        \textbullet\ \textbf{Winner} Web Designing Competition (URECKON’18) organized by University of Engineering & \textbf{May 2022} \\
+        \textbullet\ \textbf{Github Arctic Code Vault Contributor} Contributed code to several repositories in the 2020 GitHub & \textbf{May 2023} \\
+      \end{tabular*}\vspace{-7pt}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS------------------
+%-------------------------------------------
+
+\end{document}
