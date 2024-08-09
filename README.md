@@ -14,13 +14,9 @@ Get started quickly using [Overleaf](https://www.overleaf.com/latex/templates/so
 
 ```sh
 docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex main.tex
+docker run --rm -i -v "C:\Users\Thilakkumar\Documents\Coding\LaTeX\LaTeX_resume":/data latex pdflatex main.tex
 ```
-
-### Preview
-
-![Resume Screenshot](/resume_preview.png)
 
 ### License
 
-Format is MIT but all the data is owned by Sourabh Bajaj.
+Format is MIT but all the data is owned by Sourabh Bajaj.           
