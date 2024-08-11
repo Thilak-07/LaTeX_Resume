@@ -6,7 +6,7 @@ I created this template as managing a resume on Google Docs was hard and changin
 
 Most currently available templates either focus on two columns, or are multiple pages long that didn't work well for career fairs or online applications.
 
-### Quick start
+### Quick Start
 
 Get started quickly using [Overleaf](https://www.overleaf.com/latex/templates/software-engineer-resume/gqxmqsvsbdjf) template.
 
