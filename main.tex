@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author: Thilakkumar V
-% Based off of: https://github.com/sb2nov/resume
+% Based off of: https://github.com/Thilak-07/LaTeX_resume
 % License: MIT
 %------------------------
 
@@ -44,7 +44,7 @@
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
+\addtolength{\textwidth}{1.0in}
 \addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
 
@@ -57,16 +57,15 @@
 % Ensure that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
+
+%-----------Custom Commands----------------------------------------------------
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-
-
-%-----------Custom Commands----------------------------------------------------
 \NewDocumentCommand{\resumeSubheading}{ m m m m o }{
-  \vspace{-2pt}\item
+    \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small#2} \\
       \textit{\small#3} & \textit{\small#4} \\
@@ -77,7 +76,14 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{{\small#2}} \\
+      \small#1 & \textbf{\small#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\achievement}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small \textbullet\ #1} & \textbf{\small#2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -95,7 +101,6 @@
 
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
 
 
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,13 +130,15 @@
       {National Institute of Technology, Tiruchirappalli}{2020 -- 2024}
       {Bachelor of Technology in Civil Engineering, Minors in Computer Science}{8.21 CGPA}
       [Relevant Coursework: Data Structures, DBMS, Artificial Intelligence, Operating Systems, Software Engineering]
+    \vspace{-2pt}
     \resumeSubheading
       {Shree Niketan Matric. Hr Secondary School, Chennai}{2020}
       {Class XII, Central Board of Secondary Education}{91.17\%}
-    \resumeSubheading
-      {Vivekananda Vidyalaya, Chennai}{2018}
-      {Class X, Central Board of Secondary Education}{95.20\%}
-  \resumeSubHeadingListEnd
+    % \vspace{-2pt}
+    % \resumeSubheading
+    %   {Vivekananda Vidyalaya, Chennai}{2018}
+    %   {Class X, Central Board of Secondary Education}{95.20\%}
+  \resumeSubHeadingListEnd \vspace{-5pt}
 
 
 %-----------EXPERIENCE----------    
@@ -146,7 +153,7 @@
         \resumeItem{Designed advanced insurance modules, enhancing functionality and targeting a \textbf{75\% increase in customer base}.}
         \resumeItem{Analyzed \textbf{2000+ stakeholder surveys}, deriving insights that informed \textbf{6 strategic action plans}.}
       \resumeItemListEnd
-      
+    % \vspace{-2pt}
   \resumeSubHeadingListEnd
 
 
@@ -182,8 +189,8 @@
          \textbf{Web Stack:}{ HTML/CSS, ReactJS, Node.js, Express.js, Tailwind, Bootstrap} \\
          \textbf{Tools:}{ PowerBI, Advanced Excel, Tableau, Looker Studio, Jupyter Notebook, MATLAB, VS Code, Google Cloud Platform} \\
          \textbf{Certifications:}{ Data Analysis and Visualization using Python, Excel and Cognos, Databases \& SQL for Data Science}
-    }
- \end{itemize}
+    } \vspace{-5pt}
+ \end{itemize} \vspace{-5pt}
 
 
 %-----------POSITIONS OF RESPONSIBILITY-----------
@@ -207,20 +214,19 @@
     \resumeSubHeadingListEnd
 
 
-%-----------ACHIEVEMENTS-----------
-% \section{Achievements}
-%   \resumeSubHeadingListStart
-%     \item\small{
-%       \begin{tabular*}{0.97\textwidth}{@{\extracolsep{\fill}} ll}
-%         \textbullet\ \textbf{Secured 1st Position} Smart India Hackathon, MHRD, Government of India & \textbf{May 2021} \\
-%         \textbullet\ \textbf{Winner} Web Designing Competition (URECKON’18) organized by University of Engineering & \textbf{May 2022} \\
-%         \textbullet\ \textbf{Github Arctic Code Vault Contributor} Contributed code to several repositories in the 2020 GitHub & \textbf{May 2023} \\
-%       \end{tabular*}\vspace{-7pt}
-%     }
-%   \resumeSubHeadingListEnd
+% -----------ACHIEVEMENTS-----------
+\section{Achievements}
+    \resumeSubHeadingListStart
+        \achievement
+        {\textbf{Secured 1st Position} Smart India Hackathon, MHRD, Government of India}{May 2021}
+        
+        \achievement
+        {\textbf{Github Arctic Code Vault Contributor} Contributed code to several repositories in the 2020 GitHub}{May 2023}
+    \resumeSubHeadingListEnd
 
 
 %-----------CERTIFICATIONS------------------
 %-------------------------------------------
+
 
 \end{document}
