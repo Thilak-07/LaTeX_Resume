@@ -67,7 +67,7 @@
 \NewDocumentCommand{\resumeSubheading}{ m m m m o }{
     \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small#2} \\
+      \textbf{#1} & \textit{\textbf{\small#2}} \\
       \textit{\small#3} & \textit{\small#4} \\
       \IfValueT{#5}{\multicolumn{2}{l}{\textit{\small #5}}} % Include the fifth argument if provided
     \end{tabular*}\vspace{-7pt}
@@ -76,14 +76,14 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small#2} \\
+      \small#1 & \textit{\textbf{\small#2}} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\achievement}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      {\small \textbullet\ #1} & \textbf{\small#2} \\
+      {\small \textbullet\ #1} & \textit{\textbf{\small#2}} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -145,7 +145,7 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {{Business Analyst Intern} $|$ {BlockTrack}}{May 2023 -- July 2023}
+      {{Business Analyst Intern} $|$ {BlockTrack}}{May 2023 -- Jul 2023}
       {An IIT Madras incubated Health-tech startup specializing in Blockchain and SaaS products}{Chennai, TN}
       \resumeItemListStart
         \resumeItem{Conducted competitive analysis of \textbf{50+ rivals}, identifying trends and fostering collaboration.}
@@ -161,16 +161,16 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Predictive Drought Risk Model} $|$ \emph{Python, ArcGIS, EC-Earth3, MLR, SVM, Looker Studio}}{Jan. 2024 -- May 2024}
+          {\textbf{Predictive Drought Risk Model} $|$ \emph{Python, ArcGIS, MLR, SVM, Looker Studio}}{Jan 2024 -- May 2024}
           \resumeItemListStart
-            \resumeItem{Automated drought model using 70+ years of historical and 80 years of projected data with CMIP6 framework.}
-            \resumeItem{Improved predictive \textbf{accuracy by 20\%} with advanced bias correction techniques (MLR, SVM)}
-            \resumeItem{Performed 7.5 lakh SPI iterations to quantify drought characteristics in the Cauvery River Basin.}
-            \resumeItem{Developed interactive dashboards and spatial visualizations with \textbf{Google Earth Engine} for actionable insights.}
+            \resumeItem{Integrated historical data \& EC-Earth3 projections under CMIP6 framework, covering 6500+ rain gauge stations.}
+            \resumeItem{Enhanced predictive \textbf{accuracy by 20\%} with advanced bias correction techniques (MLR, SVM)}
+            \resumeItem{Automated 7.5 lakh SPI iterations to quantify drought characteristics in the Cauvery River Basin.}
+            \resumeItem{Designed interactive dashboards and spatial visualizations using \textbf{Google Earth Engine} for actionable insights.}
           \resumeItemListEnd
           
       \resumeProjectHeading
-          {\textbf{YouTube Revenue Forecast System} $|$ \emph{Machine Learning, Pandas, Scikit-learn, SQL, Folium}}{Nov. 2023}
+          {\textbf{YouTube Revenue Forecast System} $|$ \emph{Machine Learning, Pandas, Scikit-learn, SQL, Folium}}{Oct 2023 -- Dec 2023}
           \resumeItemListStart
             \resumeItem{\textbf{Executed Data Cleaning:} Addressed outliers, null values, and empty records to ensure robust dataset quality.}
             \resumeItem{\textbf{Conducted Exploratory Data Analysis (EDA):} Created choropleth maps and informative bar charts to reveal subscriber concentrations, regional trends, and niche opportunities within channel categories.}
@@ -194,22 +194,22 @@
 
 
 %-----------POSITIONS OF RESPONSIBILITY-----------
-\section{Positions of Responsibility}
+\section{Leadership / Activities}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Chairperson, Nittfest’23} $|$ \emph{The Annual Cultural Festival of NIT Trichy}}{March 2022 -- May 2024}
+          {\textbf{Chairperson, Nittfest’23} $|$ \emph{The Annual Cultural Festival of NIT Trichy}}{Mar 2022 -- May 2024}
           \resumeItemListStart
             \resumeItem{Led and coordinated a \textbf{3-tier team} of \textbf{250+ members}, executing 80+ events for 12000+ students.}
             \resumeItem{Managed a \textbf{75 lakh INR }budget with strategic marketing, promotions, and risk management.}
             \resumeItem{Organized events featuring high-profile guests like \textbf{Dr. Kamal Haasan}, partnering with \textbf{7+ production houses}.}
-            \resumeItem{Increased corporate \textbf{funding by 70\%} through innovative branding and outreach initiatives for \textbf{50+ companies.}}
+            \resumeItem{Increased corporate \textbf{sponsorship by 70\%} through innovative branding and outreach for \textbf{50+ companies.}}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Consultant} $|$ \emph{180 Degrees Consulting, NIT Trichy}}{Jan. 2022 -- May 2024}
+          {\textbf{Consultant} $|$ \emph{180 Degrees Consulting, NIT Trichy}}{Aug 2022 -- May 2024}
           \resumeItemListStart
             \resumeItem{Handled 4 consulting projects (3 start-ups, 1 NGO), with an \textbf{NPS of 100\%} across clients.}
-            \resumeItem{Within the \textbf{FinTech Innovation Project, BharatX}, conducted primary research on 10+ professional education loan systems, analyzed 5-year Indian Ed-Tech market growth with 7 parameters, and devised \textbf{3 innovative strategies} for a microcredit company's entry into the education loan market.}
+            \resumeItem{Within the \textbf{FinTech Innovation Project - BharatX}, conducted primary research on 10+ professional education loan systems, analyzed 5-year Indian Ed-Tech market growth with 7 parameters, and \textbf{devised 3 innovative strategies}.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -218,10 +218,10 @@
 \section{Achievements}
     \resumeSubHeadingListStart
         \achievement
-        {\textbf{Secured 1st Position} Smart India Hackathon, MHRD, Government of India}{May 2021}
+        {\textbf{Secured 1st Position}, Smart India Hackathon, MHRD, Government of India}{May 2021}
         
         \achievement
-        {\textbf{Github Arctic Code Vault Contributor} Contributed code to several repositories in the 2020 GitHub}{May 2023}
+        {\textbf{Github Arctic Code Vault Contributor}, Contributed code to several repositories}{May 2023}
     \resumeSubHeadingListEnd
 
 
